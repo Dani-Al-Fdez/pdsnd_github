@@ -38,7 +38,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    # load data file into a dataframe
+    # load data file into a dataframe (I am adding some shit)
     #tries if input is correct, if not, asks again for new input
     while True:
         try:
