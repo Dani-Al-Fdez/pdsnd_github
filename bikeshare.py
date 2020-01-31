@@ -38,7 +38,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    # load data file into a dataframe
+    # load data file into a dataframe (I am adding some shit)
     #tries if input is correct, if not, asks again for new input
     while True:
         try:
@@ -209,6 +209,6 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+# lee eso https://es.stackoverflow.com/questions/32165/qu%C3%A9-es-if-name-main
 if __name__ == "__main__":
 	main()
