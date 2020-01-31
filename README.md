@@ -24,7 +24,7 @@ and it will get statistics about the given place and time. This statistics will 
 ### Credits
 This work has been made during the Udacity Programming for Data Science Nanonedegree program.
 
-Thanks to
-@udacity for its awesome course organization.
-@richardkalehoff for its amazing course on Version control.
-@Junolee for her incredible introduction to Python3
+Thanks to:
+* @udacity for its awesome course organization.
+* @richardkalehoff for its amazing course on Version control.
+* @Junolee for her incredible introduction to Python3
