@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Which city would you like to get data from? :').lower()
-    
+
     # get user input for month (all, january, february, ... , june)
     month = input('Which month would you like to get data from?:')
 
@@ -56,7 +56,7 @@ def load_data(city, month, day):
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
     # filter by month if applicable
-        
+
     if month != 'all':
         # use the index of the months list to get the corresponding int
         while True:
@@ -68,12 +68,12 @@ def load_data(city, month, day):
                 print('Please, enter one of the following months: january, february, march, april, may, june or all if you want to see data for every month')
                 month = input('Which month would you like to get data from?:')
 
-                
+
 
                 # filter by month to create the new dataframe
         df = df[df['month'] == month]
-            
-        
+
+
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
@@ -195,6 +195,7 @@ def user_stats(df):
     print('-'*40)
 
 def main():
+    '''Function gets input from user, loads filtered data and passes it to the functions that calculate the statistics'''
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
